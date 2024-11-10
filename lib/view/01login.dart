@@ -1,6 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:gestion_autos/view/03menu.dart';
+
+
 
 class login extends StatefulWidget {
   const login({super.key});
@@ -15,14 +18,7 @@ class _loginState extends State<login> {
     return Scaffold(
         backgroundColor: Colors.black,
         appBar:AppBar(
-              title: Text("Hola"),
-              : IconButton(
-                  icon: Icon(
-                    Icons.arrow_back_ios_new_outlined,
-                    size: 48,
-                  ),
-                  onPressed: () {},
-                ),
+              
             ),
         body:
         Padding(
@@ -59,7 +55,13 @@ class _loginState extends State<login> {
                   height: 16,
                 ),
                 ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                       Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => menu(),
+                          ));
+                    },
                     child: Text(
                       "Ingresar",
                       style: TextStyle(
@@ -71,12 +73,16 @@ class _loginState extends State<login> {
                       minimumSize: Size(double.infinity, 50),
                       elevation: 50,
                     )),
+
+                    Text("Olvidó su contraseña"),
+                    Text("Olvidó su contraseña")
+
               ],
             )
             )
             )
             )
-          ]
-        ),);
+          
+        );
   }
 }
