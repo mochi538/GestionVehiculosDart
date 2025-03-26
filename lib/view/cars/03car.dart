@@ -15,17 +15,17 @@ class _carTresState extends State<carTres> {
     return Scaffold(
         backgroundColor: Colors.black,
         appBar:AppBar(
-              title: Text("Detalle vehículo"),
+              title: const Text("Detalle vehículo"),
             ),
         body:Column(
           children: [
             Image.network(""),
-            Text("Marca: Toyota"),
-            Text("Modelo: Corolle"),
-            Text("Año: 2022"),
-            Text("Disponibilidad: Disponible"),
+            const Text("Marca: Toyota"),
+            const Text("Modelo: Corolle"),
+            const Text("Año: 2022"),
+            const Text("Disponibilidad: Disponible"),
             ElevatedButton(onPressed: (){}, child: 
-            Text("Alquilar Vehículo"))
+            const Text("Alquilar Vehículo"))
           ],
         )
           

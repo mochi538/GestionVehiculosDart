@@ -1,43 +1,67 @@
-# Miscellaneous
-*.class
-*.log
-*.pyc
-*.swp
-.DS_Store
-.atom/
-.buildlog/
-.history
-.svn/
-migrate_working_dir/
-
-# IntelliJ related
-*.iml
-*.ipr
-*.iws
-.idea/
-
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
-
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
+# Archivos y carpetas de Dart/Flutter
 .dart_tool/
+.build/
+.melos/
+
+# Dependencias y caché
+pubspec.lock
+.packages
+.podspec
 .flutter-plugins
 .flutter-plugins-dependencies
-.pub-cache/
-.pub/
-/build/
+.flutter-versions
 
-# Symbolication related
-app.*.symbols
+# Archivos de compilación y generados
+*.iml
+*.lock
+*.pyc
+*.pyo
+*.swp
+*.DS_Store
+*.idea/
+*.vscode/
+*.metadata
+android/app/debug.keystore
 
-# Obfuscation related
-app.*.map.json
+# Archivos y carpetas de Flutter específicos de plataformas
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/.generated/
 
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
+# Archivos de configuración de IDE
+.idea/
+*.ipr
+*.iws
+*.iml
+*.launch
+
+# Archivos específicos de VS Code
+.vscode/
+*.code-workspace
+
+# Archivos de compilación nativos
+android/.cxx/
+android/gradle/
+android/local.properties
+android/app/google-services.json
+android/app/src/debug/
+android/app/src/profile/
+android/app/src/release/
+
+# Archivos de configuración de Firebase (si se usan)
+ios/Runner/GoogleService-Info.plist
+android/app/google-services.json
+
+# Archivos de logs y caché del sistema
+pubspec.lock
+*.log
+*.bak
+*.tmp
+
+# Archivos de depuración
+debug.log
+error.log
